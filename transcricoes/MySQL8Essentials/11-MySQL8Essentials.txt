@@ -1,0 +1,45 @@
+Traduza o texto para português. Resuma a resposta. Tópicos objetivos. Insira e explique todos detalhes comentados. criar uma consulta eficiente para provas e exames de cursos. Inclua um exemplo lúdico para cada explicação. Coloque tudo em um bloco no formato Markdown. Em um segundo bloco, explique todas as denominações, conceitos, ou ações que aparecem no texto. Adicione mais emoticons para uma resposta mais simpática:
+
+The standard configuration is suitable for most uses, but sometimes you need to make some initial configuration changes. A typical reason to change the initial configuration is to have more control over the location of important files. The most important variable that controls file locations are basedir, the base location of MySQL binaries, and datadir, which is the database directory.
+
+We'll review the different configuration locations and their purposes to show you can be completely flexible in where you place your files. You can place the root of your MySQL installation anywhere in the file system. For this example, let's see what it would look like if you placed all of your files in a directory named MySQL.
+
+The base directory is the location of the MySQL installation. RPM installation placed this in /user/location and /mysql. For more flexibility, you might install each MySQL version in a different directory and use a symbolic link to refer to it. This setup simplifies the upgrade process. Just install the new version in a new directory and then update the symbolic link to switch to the new version.
+
+The data directory is where databases are stored. The standard location is /var/lib/mysql. But you might prefer to have this on a fast redundant array to improve performance and reduce downtime in the event of a failure in your storage media.
+
+Error logs go to /var/log/mysql by default, but you can redirect these to a different location or even to the system log. Other configurable file locations include location for temporary files, data files in CSV or similar format that can be imported with LOAD DATA command in server-wide configuration files. Finally, binary logs used for replication and incremental backup and restore.
+
+The configuration file is made up of several variables in their assigned values. In this example, you can see the mysqld section that contains variable values that apply to the MySQL daemon or server process. For example, the socket variable specifies the location of the Unix socket file that local clients can use to connect to the server rather than use a TCP/IP network connection.
+
+The datadir variable specifies the location of the initial databases and is the default location for any user databases that you create. The standard file name is my.cnf, or if you're using Windows, it's my.ini. As you can see in this example, it is a human-readable text divided into sections.
+
+The example shows the server variables. And it can also contain variables that's specific for clients and tools or even variables that apply to all clients. The server reads the configuration files at startup and applies the settings so that it can read from the correct files and write logs as needed.
+
+If there are configuration errors, the server fails to start. And then if it can, it writes an appropriate error to the error log. The standard configuration file contains defaults that are appropriate to most uses. This is particularly the case for installation from package managers, such as RPM files or Oracle Linux, repeat, on Oracle Linux, or MySQL Windows Installer.
+
+On those systems, the initial configuration will work straight away. Of course, you can read the documentation for more information and guidance on variables of the initial configuration files.
+
+When you install MySQL from a package manager, it creates the standard required files, the data directory location, and binary files for the tools and servers. If you install from binary archive, you'll need to initialize the data directory. This creates the system database and initializes the storage engine and log files.
+
+First, you navigate to the location where you have configured the data directory. Then you grant ownership of that location to the MySQL user and group so that the server has full permission over its database files. Then you run the command that initializes the data directory.
+
+You do this by running the server process from the mysqld binary and pass in the appropriate option. The initialize option is the standard method. It creates the root account and displays the generated password on the console.
+
+Alternatively, the initialize-insecure option sets up the data directory in the same way but without setting a root password. This is very insecure. You should only do this if you have some other scripted process that sets the root password before the system is connected to a network.
+
+The link in this slide contains the documentation about initializing the data directory. Here's the link.
+
+When you've configured the server options, the files, information, it's time to run the server process. Usually, you'll automate the server startup and shutdown, making it an operating system that starts and stops with the operating system.
+
+There are various ways to do this, either by scripting the launch of the mysqld or mysqld safe binaries, using the Linux systemd initialization system, or configuring it as a Windows service as required.
+
+If you're writing such scripts yourself, you should familiarize yourself with the various options that you can pass to the server process. The help and the help verbose option lists all available startup variables in where the server reads them from. The order of configuration files in option is also important.
+
+Sometimes you might want to create multiple scripts, one of which serves a special purpose for some particular boot up reasons. If you want to override the standard configuration file for a particular script or purpose, you can use the default file option.
+
+If you want to change the networking configuration for this startup, you can use the bind-address option. And on the rare occasion that you might want to start with no security at all, for example, if you've forgotten the root password and need to change it, use the skip-grant-tables option.
+
+Other reasons to modify your initial configuration might include turning off logging to speed up large inputs. Repeat, turning off logging to speed up large inputs. Using specific configuration files for creation time or other purposes. or adding options for specific application needs.
+
+The link in the slide contains a discussion for configuring MySQL to start automatically on your operating system. Here is the link.

@@ -1,0 +1,15 @@
+Traduza o texto para português. Resuma a resposta. Tópicos objetivos. Insira e explique todos detalhes comentados. criar uma consulta eficiente para provas e exames de cursos. Inclua um exemplo lúdico para cada explicação. Coloque tudo em um bloco no formato Markdown. Em um segundo bloco, explique todas as denominações, conceitos, ou ações que aparecem no texto. Adicione mais emoticons para uma resposta mais simpática:
+
+Welcome to the MySQL essential course. This course goes through the basics that you should know when working with MySQL. This course is for you if you are a database administrator or hoping to become a database administrator who needs to become familiar with MySQL.
+
+It's also for developers who are working on data driven applications. And will also be useful to IT professionals responsible for installing, configuring, and supporting MySQL. There is some prerequisite knowledge that you should know before continuing with this course.
+
+You're expected to know the basics of computing infrastructure architecture and networking. You'll also need to have knowledge of basic operating system usage and configuration.
+
+After completing this course, you should be able to explain the core components of MySQL Enterprise Edition, install and upgrade MySQL, execute SQL commands in MySQL, configure backups, replication, and high availability in MySQL, and setup and use MySQL HeatWave in Oracle Cloud Infrastructure.
+
+This course consists of 11 modules. This module introduces this course before we dive into the technical content. The next module introduces MySQL Enterprise Edition and how it relates to MySQL Community Edition. Then we cover MySQL architecture, where to find the installation software and how to install and upgrade.
+
+The next module introduces database design, queries, and Structured Query Language, also known as SQL. The next two modules cover MySQL security and tools for security that are available in MySQL Enterprise Edition. After that, we cover the concepts involved in backing up your MySQL instances and in particular the MySQL Enterprise Backup utility. Then we cover replication topologies in the details of configuring MySQL replication.
+
+The next module explains how to configure a highly available MySQL infrastructure. Then we show how to monitor MySQL in a variety of ways. Finally, we introduce MySQL HeatWave based on MySQL Enterprise Edition, but with many additional features and benefits only available in the Cloud. Let's get started.

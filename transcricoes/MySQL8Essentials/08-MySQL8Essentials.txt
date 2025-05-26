@@ -1,0 +1,45 @@
+Traduza o texto para português. Resuma a resposta. Tópicos objetivos. Insira e explique todos detalhes comentados. criar uma consulta eficiente para provas e exames de cursos. Inclua um exemplo lúdico para cada explicação. Coloque tudo em um bloco no formato Markdown. Em um segundo bloco, explique todas as denominações, conceitos, ou ações que aparecem no texto. Adicione mais emoticons para uma resposta mais simpática:
+
+In this module, we'll cover MySQL installation and architecture. By the end of this module, you'll be able to understand how to prepare your environment and decide what software to use. Next, install MySQL on the Linux or Windows operating system. Then create the initial user accounts for MySQL, both on the operating system and within the MySQL server. After that, understand the configuration files and how to set different configuration options. And finally, upgrade MySQL between versions or between editions.
+
+Let's look at how you prepare for the installation. The first thing to consider is the environment for the database server. MySQL is supported on many different Linux distributions. You can also run it on Windows or Apple macOS. A complete list of supported operating system is available at a link in this slide. Here is the link.
+
+You can run MySQL on a variety of host platforms. You can use dedicated servers in a server room or virtual machines in a data center. Developers might prefer to deploy on Docker or Kubernetes containers. And don't forget you can deploy HeatWave, the MySQL cloud version, in many different clouds.
+
+MySQL has great multithreading capability. It also has support for Non-Uniform Memory Access or NUMA. This is particularly important if you run large systems with hundreds of concurrent connections.
+
+MySQL storage engine InnoDB makes effective use of your available memory. It stores your active data in a buffer pool. And that increases access time-- repeat. This greatly improves access time compared to reading straight from disk. Of course, SSDs and other solid state media are much faster than hard disks. But don't forget, MySQL can make full use of that performance benefit too.
+
+Redundancy is very important for the MySQL server. Hardware with redundant power supply, storage media, and network connections can make all the difference to your uptime. Without redundancy, a single point of failure will bring down the server if it fails.
+
+Our most popular software is the MySQL Community Edition. It is available at no cost for mysql.com for many platforms. This version is why MySQL is the most popular database for web application. And it is also open source.
+
+MySQL Enterprise Edition is the commercial edition. It is fully supported by Oracle. You can get it from support.oracle.com as an Oracle customer. If you want to try out the enterprise features but are not yet a customer, you can get the latest version of MySQL as a trial edition from edelivery.oracle.com.
+
+Because MySQL is open source, you can get the source code from either mysql.com or GitHub. Most people don't need the source. But any developer who wants to modify the code or even contribute back to the project are welcome to do so.
+
+Let's look at the MySQL release model. This is divided into LTS and Innovation releases, each with a different target audience. LTE stands for long-term support. MySQL 8.4 is an LTS release and will be supported for several years.
+
+LTS releases are feature-stable. When you install an LTS release, you can apply future bug fixes and security patches without changing any behavior in the product. The bug fixes and security patches are designed to be backward compatible. This means you can upgrade easily from previous releases.
+
+LTS releases come every two years-- repeat-- every two years. This allows you to maintain a stable system without having to change your underlying application too frequently. You will not be forced to upgrade after two years. You can continue to enjoy support for an LTS release for up to eight years.
+
+Along with LTS releases, we also have Innovation releases. These contain the latest leading-edge features that are developed even in the middle of an LTS cycle. You can upgrade from LTS to Innovation and back again, depending on which features you require in your application.
+
+Innovation releases have a much more rapid cadence. You can get the latest features every quarter. This means Innovation releases are supported only for their specific release. So if you're on the Innovation track, you must upgrade more frequently.
+
+All editions of MySQL are shipped as both LTS and Innovation releases. This includes the self-managed editions and also HeatWave in the cloud. You can treat both LTS and Innovation releases as production-ready. This means they are generally available releases.
+
+Innovation does not mean beta quality software. You get the same quality support from Oracle whether you're using LTS or Innovative software. The MySQL client software and other tools will operate with both LTS and-- repeat-- and innovation releases.
+
+Connectors are the language-specific software component that connects your application to MySQL. You should use the latest version of connectors. Connectors are also production-ready, generally-- repeat-- generally available software. They will work with any version of MySQL that is supported at the time of the connector's release.
+
+You might already be familiar with the Docker store. It is used for getting containerized images of software. And an Oracle customer, you might be familiar with My Oracle Support. It provides support and updates for all supported Oracle software in patches.
+
+MySQL works well with virtualization and container platform, including Docker. You can get images from the Community Edition on Docker Hub. If you are an Enterprise Edition customer, you can get images from the Docker store for MySQL Oracle Support or from Oracle container's registry.
+
+MySQL has detailed documentation. You should familiarize yourself with the documentation as you prepare to install MySQL. The reference manual for both Community and Enterprise editions are available at the Developer Zone at dev.mysql.com. Oracle customers also have access to the knowledge base at support.oracle.com. It contains support information on use cases and reference architectures.
+
+The product team regularly posts announcements and technical articles to several blogs. You can see these blogs listed somewhere in this, like right here. These blogs often contain pre-release announcements of upcoming features to help you prepare for your next project. Also, you'll find deep dives into technical topics and complex problems that MySQL solves. This includes some problems specific to highly availability architecture.
+
+We also feature individual blogs-- repeat-- individual blogs from high profile members of our team. These include the MySQL Community evangelist lefred. He posts about upcoming events and interesting features. Also, Dimitri Kravchuk often blogs that-- repeat-- offers blogs that provide deep dives into performance.

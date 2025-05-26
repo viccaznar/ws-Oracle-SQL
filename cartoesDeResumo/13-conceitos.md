@@ -1,0 +1,12 @@
+# **Dicionário de Termos**
+- **Banco de Dados** 🗄️ - Conjunto de dados organizados.  
+- **Tabelas** 📂 - Estruturas dentro do banco que armazenam dados.  
+- **Índices** 📖 - Mecanismo que acelera buscas.  
+- **Transações** 🔄 - Alterações organizadas que podem ser confirmadas ou desfeitas.  
+- **Commit** ✔️ - Confirmação das alterações na base.  
+- **Rollback** ❌ - Desfaz as alterações pendentes.  
+- **InnoDB** 🔐 - Motor de armazenamento seguro e confiável.  
+- **ACID** ⚖️ - Conjunto de regras que garantem integridade.  
+- **Buffer Pool** 🚀 - Cache de memória para acelerar consultas.  
+- **Criptografia** 🔏 - Protege dados armazenados contra acesso não autorizado.  
+- **Clusters** 🖥️🌍 - Vários servidores trabalhando juntos para melhorar desempenho.  

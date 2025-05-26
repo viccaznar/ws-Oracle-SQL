@@ -1,0 +1,31 @@
+Traduza o texto para português. Resuma a resposta. Tópicos objetivos. Insira e explique todos detalhes comentados. criar uma consulta eficiente para provas e exames de cursos. Inclua um exemplo lúdico para cada explicação. Coloque tudo em um bloco no formato Markdown. Em um segundo bloco, explique todas as denominações, conceitos, ou ações que aparecem no texto. Adicione mais emoticons para uma resposta mais simpática:
+
+So queuing MySQL is one of the most important things you can do. So let's talk about the initial user accounts. MySQL account identifier is more than just a username and password. It consists of three elements, two that identify the account, and one that is used for authentication.
+
+The three elements are the username, it's used to log in from the client; the hostname element, it identifies a computer or set of computers; and the password, it must be provided to gain access to MySQL.
+
+The hostname is a part of the account identifier that controls where the user can log in. It is typically a DNS computer name or an IP address. You can use a wildcard, which is the percentage sign to allow the name user to log in from any connected host, or you can use the wildcard as part of an IP address to allow login from a limited range of IP addresses.
+
+When you first install MySQL on your computer, it installs several system accounts. The only user account that you can log in to is the administrative account that's called the root account. Depending on the installation method that you use, you'll either see the initial root password on the console as you install the server, or you can read it from the log file.
+
+For security reasons, the password of a new account, such as the root account must change. MySQL prevents you from executing any other operation with that account until you have changed the password. Visit the link in this slide for more information on creating and securing MySQL user accounts.
+
+The MySQL service must run as a system-level user. Each operating system has its own method for creating such a user. All operating system follows the same general principles. However, when using the MySQL installer on Windows or the RPM package installation on Oracle Linux, each installation process creates and configure the system-level user.
+
+Let's look at an example using the generic binary distribution. It requires us to perform the initial configuration ourselves. Once you have the MySQL binaries in an archive file and are ready to unzip it, you must perform some initial user configuration.
+
+First, you must create the operating system user that the MySQL server process uses to run on the system. Then you create the appropriate installation location for both the binary executable file and the data directory. This can be a simple infrastructure, or if you have more specific needs, you can create a complex infrastructure.
+
+Before launching the server for the first time, you must configure the my.cnf file. You need to specify the MySQL server, user, and the location of the data directory. The template configuration included in the archive provides most of what you need to get started.
+
+Once you have the files and configuration in place, you will initialize the instance to create the system databases, the server identity, and other required elements. Then you can start the MySQL server process. You can use the binary executable or you can use one of the provided startup scripts or start it as an operating system service.
+
+If you need to, you can tweak the startup scripts to meet your own needs. For example, you can add case-specific command-line options to it. If you need to change server-wide or client-wide configuration, you can add those to the configuration file. The link in this slide contains the documentation for the installation process in more details. Here is the link.
+
+As always, you'll want to follow best practices when it comes to security. One of those best practices is how you create the MySQL server process user. It should be a generic system user with no advanced permissions.
+
+This user does not need permission to perform system administration function. It does not need permission to start or stop network connections, mount drives, or create other system users. This user should not have full access to the file system.
+
+It does not need shell access either because it does not perform interactive operations against any specific shell. However, this user does require access to the files in the data directory and any log directories. It also needs access to any directory used for storing and managing backup or scripts that the server process uses.
+
+Let's say you use sudo at the shell to perform backup. In this case, these accesses are especially important because they maintain consistent file permission for both the server and the client tools.

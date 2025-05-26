@@ -1,0 +1,27 @@
+Traduza o texto para português. Resuma a resposta. Tópicos objetivos. Insira e explique todos detalhes comentados. criar uma consulta eficiente para provas e exames de cursos. Inclua um exemplo lúdico para cada explicação. Coloque tudo em um bloco no formato Markdown. Em um segundo bloco, explique todas as denominações, conceitos, ou ações que aparecem no texto. Adicione mais emoticons para uma resposta mais simpática:
+
+We are now in part 1 of MySQL tools and advanced features. We'll do a high-level review of the tools and features that are available for using MySQL. Let's start with MySQL Shell. MySQL Shell is an integrated client tool used for all MySQL database operations and administrative functions. It's a top choice among MySQL users for its versatility and powerful features. This is also the main tool that we will be using throughout this training.
+
+MySQL Shell offers multi-language support for JavaScript, Python, and SQL. These naturally scriptable languages make coding flexible and efficient. They also allow developers to use their preferred programming language for everything, from automating database tasks to writing complex queries.
+
+MySQL Shell-- repeat. MySQL Shell supports both document and relational models. Whether your project needs the flexibility of NoSQL document oriented structures or the structured relationships of traditional SQL tables, MySQL Shell manages these different data types without any problems.
+
+In part 2, I will briefly explain the functions of MySQL Tools and Advanced Features. MySQL Enterprise Backup is a powerful tool that offers online, non-blocking backup, and recovery. It makes sure databases remain available and performs optimally during the backup process.
+
+It also includes advanced features, such as incremental and differential backup. Additionally, MySQL Enterprise Backup supports compression to reduce backups and encryptions to keep data secure. One of the standard capabilities of MySQL Enterprise Backup is its seamless integration with media management software, or MMS. This integration simplifies the process of managing and storing backups, ensuring that data is easily accessible and secure.
+
+Then we have the MySQL Workbench Enterprise. Enhancing-- and repeat. It enhances database development and design with robust tools for creating and managing your diagram and ensuring proper documentation. Next, it simplifies data migration with powerful tools that makes it easy to move databases between platforms.
+
+For database administration, MySQL Workbench Enterprise offers efficient tools for monitoring, performance tuning, user management and backup and recovery. MySQL Enterprise Monitor is another tool. It provides real-time MySQL performance and availability, monitoring. Repeat. And availability monitoring. It helps track database's health and performance.
+
+Second, it visually finds and fixes problem queries. This is to make it easy to identify and address performance issues. Third, it offers MySQL best-practice advisors to guide users in maintaining optimal performance and security. Lastly, MySQL Enterprise Monitor is proactive, and it provides forecasting to help users anticipate and prepare for future issues.
+
+Now let's look at Oracle Enterprise Manager Plugin for MySQL. This one offers availability and performance monitoring to make sure MySQL databases are running smoothly and efficiently. It provides configuration monitoring. This is to help keep track of the database settings and configuration. Finally, it collects all available metrics to provide comprehensive insight into the database operation.
+
+Next is the MySQL Enterprise Thread Pool. This one improves scalability as concurrent connections grows. It makes sure the database can handle increased loads efficiently. Next, MySQL Enterprise Authentication, which is another tool. This one integrates MySQL with existing security infrastructures. It provides robust security solutions. It supports Linux PAM, LDAP, Windows, Kerberos, and even FIDO for passwordless authentication.
+
+Then we have the MySQL Enterprise Audit. It provides out-of-the-box logging of connections, logins, and queries in XML or JSON format. It also offers simple to fine-grained policies for filtering and log rotation. This is to ensure comprehensive and customizable logging. Next, MySQL Enterprise Firewall detects and blocks out of policy database transactions. This is to protect your data from unauthorized access and activities.
+
+We also have MySQL Enterprise Asymmetric Encryption. It uses MySQL encryption libraries for key management signing and verifying data. It ensures data stays secure during handling. MySQL Transparent Data Encryption, another tool, provides data-at-rest encryption within the database. The Master Key is stored outside of the database in a KMIP 1.1 compliant Key Vault. That is to improve database security.
+
+Finally, MySQL Enterprise Masking offers masking capabilities, including string masking and dictionary replacement. This ensures sensitive data is protected by obscuring it. It also provides random data generators, such as range-based pay-- such as range-based, Payment Card, email, and Social Security number generators. These tools help create realistic but anonymized data for testing and development.

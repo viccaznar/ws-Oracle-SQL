@@ -1,0 +1,33 @@
+Traduza para o português. Explicação clara, detalhada e fácil de entender para cada detalhe abordado. Divida em tópicos objetivos. Exemplo lúdico para todos os tópicos apresentadados. Adicione mais emoticons relacionados ao tema. Coloque a resposta em um bloco no formato Markdown.
+
+In this module, we will cover database design. By the end of this module, you'll be able to understand how MySQL stores data on the file system then create databases and tables for storing data. Next, create and use indexes to improve performance. Also, understand how to join tables together in your queries. Finally, describe how MySQL enables partitioning to control how portions of data are stored in different locations.
+
+Let's look at how MySQL stores data on the file system. In the MySQL architecture, the storage engine layer is part of the server process. Logically speaking, it comes between the parts of the server responsible for inputting, parsing, and optimizing SQL and the underlying file systems.
+
+The standard storage engine in MySQL is called InnoDB. But other storage engines are also available. InnoDB supports many of the features that are required by a production database system. Other storage engines have different sets of features. For example, MyISAM is a basic fast storage engine but has fewer reliability features.
+
+NDB Cluster is a scalable distributed storage engine. It runs on multiple nodes and uses additional software to manage the cluster. But for now, we will focus on features available in InnoDB.
+
+The storage engine supports many concurrent users. It also keeps their changes separate from each other. One way it achieves this is by supporting transactions. Transactions allows users to make changes that can be rolled back if necessary and prevent other users from seeing those changes until they are committed or saved persistently.
+
+The storage engine also enables referential integrity. This is to make sure that data in a dependent table refers only to valid source data. For example, you cannot insert an order for a customer that does not exist.
+
+It stores raw data on disk in a B-tree structure and uses fast algorithms to insert rows in the correct place. This is done so that the data can be retrieved quickly. It uses a similar method to store indexes. This allows you to run queries based on a sort order that is different from the row's natural order.
+
+InnoDB has its own buffer pool. This is a memory cache that stores recently accessed data. And as a result, queries on active data are much faster than queries that read from the disk. InnoDB also has performance features such as multithreading and bulk insert optimization.
+
+When you install MySQL the standard storage engine is InnoDB. This is generally the best choice for production workloads that need both reliability and high performance. It supports transaction syntax, such as commit and rollback, and is fully ACID compliant.
+
+ACID stands for atomic. This means your transaction can contain multiple statements, but the transaction as a whole is treated as one change that succeeds or fails. Consistent means that transactions move the system from one consistent state to another.
+
+Isolated means that changes made during a transaction are isolated from other users until that transaction completes. And durable means that the server ensures that the transaction is persisted or written to disk once it completes.
+
+InnoDB also supports data encryption which keeps your data secure on the disk. It also supports compression which saves space at the cost of some extra CPU usage. You can configure an InnoDB cluster of multiple MySQL server nodes across multiple hosts to enable high availability.
+
+Transaction support is a key part of any reliable database, particularly when multiple concurrent users can change data. By default, each statement commits automatically so that you don't have to type commit every time you update a row. You can open a transaction with the statement START TRANSACTION or BEGIN, which is synonymous.
+
+When you start a transaction data manipulation language or DML statements within that transaction do not automatically commit. This means you must execute commit to persist the transaction or rollback to cancel it. This rule does not apply to data definition language or DLL statements such as create table. DDL statement cause an implicit commit.
+
+Here is an example that demonstrates the use of START TRANSACTION to a group operation-- the example START TRANSACTION, followed by two DML statements that insert rows. However, the ROLLBACK statement cancels the transaction, making it as if the previous two INSERT statements never happened.
+
+The following INSERT statement is executed while autocommit is active. So when you select from that table, you will see that only the third row has been inserted.
