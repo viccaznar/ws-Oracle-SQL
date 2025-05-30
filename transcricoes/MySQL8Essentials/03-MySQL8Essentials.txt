@@ -1,4 +1,4 @@
-Traduza o texto para português. Resuma a resposta. Tópicos objetivos. Insira e explique todos detalhes comentados. criar uma consulta eficiente para provas e exames de cursos. Inclua um exemplo lúdico para cada explicação. Coloque tudo em um bloco no formato Markdown. Em um segundo bloco, explique todas as denominações, conceitos, ou ações que aparecem no texto. Adicione mais emoticons para uma resposta mais simpática:
+Traduza para o português. Explicação clara, detalhada e fácil de entender para cada detalhe abordado. Divida em tópicos objetivos. Exemplo lúdico para todos os tópicos apresentadados. Adicione mais emoticons relacionados ao tema. Coloque a resposta em um bloco no formato Markdown.
 
 This next topic covers licensing. MySQL licensing is essential for independent software vendors. They're called ISVs. In original manufacturers, they're called OEMs. This is because these companies often incorporate MySQL code into their software products or hardware system to boost the functionality and performance of their product. MySQL licensing is equally important for value-added resellers. We call those VARs. And also, it's important for other distributors.
 
